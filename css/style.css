@@ -1,0 +1,45 @@
+body{
+    font-family: 'VT323', monospace;
+
+}
+
+.biglietto{
+    position: relative;
+    font-size:35px;
+    text-transform: uppercase;
+}
+
+#data{
+    position: absolute;
+    top: 18%;
+    left: 32%;
+    font-size: 44px;
+}
+
+#sconto {
+    position: absolute;
+    bottom: 18%;
+    left: 17%;
+    font-size: 35px;
+}
+
+#distanza {
+    position: absolute;
+    bottom: 41%;
+    left: 11%;
+    font-size: 35px;
+}
+
+#tariffa {
+    position: absolute;
+    bottom: 35%;
+    left: 21%;
+    font-size: 35px;
+}
+
+#totale {
+    position: absolute;
+    bottom: 28%;
+    right: 28%;
+    font-size: 35px;
+}

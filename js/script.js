@@ -19,6 +19,7 @@ totale.toFixed(2);
 prompt 
 */
 
+
 var birthday = prompt("Prego inserire la data di nascita nel seguente formato", "DD/MM/AAAA");
 var dd = birthday.substring(0, 2);
 var mm = birthday.substring(3,5);
@@ -31,7 +32,8 @@ console.log("yyyy",aaaa);
 
 birth = new Date(aaaa,(mm-1),dd);
 today = new Date();
-console.log(birth.getTime());
+document.getElementById("data").innerHTML= today;
+console.log(today);
 
 var dist = prompt("distanza da percorrere","00.00");
 console.log("distanza:",dist," Km");
