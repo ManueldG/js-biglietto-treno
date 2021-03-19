@@ -19,3 +19,39 @@ totale.toFixed(2);
 prompt 
 */
 
+var birthday = prompt("Prego inserire la data di nascita nel seguente formato", "DD/MM/AAAA");
+var dd = birthday.substring(0, 2);
+var mm = birthday.substring(3,5);
+var aaaa = birthday.substring(6, 10);
+
+console.log("birthday",birthday);
+console.log("dd",dd);
+console.log("mm",mm);
+console.log("yyyy",aaaa);
+
+birth = new Date(aaaa,(mm-1),dd);
+today = new Date();
+console.log(birth.getTime());
+
+var dist = prompt("distanza da percorrere","00.00");
+console.log("distanza:",dist," Km");
+
+var eta =  parseFloat((today.getTime() - birth.getTime())/31536000000) ;
+console.log("età:",eta);
+
+var percent = (eta <=  18) ? 20 : ((eta >= 65) ? 40 : 0) ;
+    
+console.log("percentuale",percent);
+
+var prezzo = (dist * 0.21);
+console.log("prezzo",prezzo);
+
+var sconto = (prezzo * percent) / 100;
+console.log("sconto",sconto);
+
+var totale = prezzo - sconto;
+console.log("totale",totale);
+
+
+
+
