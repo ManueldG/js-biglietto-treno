@@ -18,7 +18,7 @@ var sconto = (eta < 18) ? 20 : 1;
 totale.toFixed(2);
 prompt 
 */
-
+const TARIFFA = 0.21;
 
 var birthday = prompt("Prego inserire la data di nascita nel seguente formato", "DD/MM/AAAA");
 var dd = birthday.substring(0, 2);
@@ -30,28 +30,39 @@ console.log("dd",dd);
 console.log("mm",mm);
 console.log("yyyy",aaaa);
 
+//  Istanziata Data
 birth = new Date(aaaa,(mm-1),dd);
 today = new Date();
-document.getElementById("data").innerHTML= today;
+document.getElementById("data").innerHTML= " "+today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();
 console.log(today);
 
+// legge la distanza da percorrere
 var dist = prompt("distanza da percorrere","00.00");
+document.getElementById("distanza").innerHTML= dist;
 console.log("distanza:",dist," Km");
 
+// calcola età 
 var eta =  parseFloat((today.getTime() - birth.getTime())/31536000000) ;
 console.log("età:",eta);
 
+// calcola percentuale
 var percent = (eta <=  18) ? 20 : ((eta >= 65) ? 40 : 0) ;
     
 console.log("percentuale",percent);
+document.getElementById("sconto").innerHTML= percent+"% ";
 
-var prezzo = (dist * 0.21);
+// calcola prezzo
+var prezzo = (dist * TARIFFA);
+document.getElementById("tariffa").innerHTML= TARIFFA;
 console.log("prezzo",prezzo);
 
+// calcolo sconto
 var sconto = (prezzo * percent) / 100;
 console.log("sconto",sconto);
 
+// calcola totale
 var totale = prezzo - sconto;
+document.getElementById("totale").innerHTML= totale;
 console.log("totale",totale);
 
 
