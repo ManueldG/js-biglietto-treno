@@ -33,13 +33,13 @@ body{
 #tariffa {
     position: absolute;
     bottom: 35%;
-    left: 21%;
+    left: 16%;
     font-size: 35px;
 }
 
 #totale {
     position: absolute;
     bottom: 28%;
-    right: 28%;
+    left: 55%;
     font-size: 35px;
 }

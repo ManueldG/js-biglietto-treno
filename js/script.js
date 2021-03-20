@@ -62,7 +62,7 @@ console.log("sconto",sconto);
 
 // calcola totale
 var totale = prezzo - sconto;
-document.getElementById("totale").innerHTML= totale;
+document.getElementById("totale").innerHTML= totale.toFixed(2);
 console.log("totale",totale);
 
 
