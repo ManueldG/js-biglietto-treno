@@ -7,39 +7,40 @@ body{
     position: relative;
     font-size:35px;
     text-transform: uppercase;
+    width: 1000px;
 }
 
-#data{
+#data {
     position: absolute;
-    top: 21%;
-    left: 32%;
+    top: 22%;
+    left: 47%;
     font-size: 44px;
 }
 
 #sconto {
     position: absolute;
     bottom: 18%;
-    left: 17%;
+    left: 24%;
     font-size: 35px;
 }
 
 #distanza {
     position: absolute;
     bottom: 41%;
-    left: 11%;
+    left: 14%;
     font-size: 35px;
 }
 
 #tariffa {
     position: absolute;
     bottom: 35%;
-    left: 16%;
+    left: 25%;
     font-size: 35px;
 }
 
 #totale {
-    position: absolute;
-    bottom: 28%;
-    left: 55%;
-    font-size: 35px;
+	position: absolute;
+	bottom: 28%;
+	left: 89%;
+	font-size: 35px;
 }
